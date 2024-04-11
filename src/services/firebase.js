@@ -9,13 +9,13 @@ import {getAuth} from 'firebase/auth' ;
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC4bZwJCexlpGik-TlqfODqg9hKerMGjcQ",
-    authDomain: "boudin-creole-toulouse.firebaseapp.com",
-    projectId: "boudin-creole-toulouse",
-    storageBucket: "boudin-creole-toulouse.appspot.com",
-    messagingSenderId: "413842260586",
-    appId: "1:413842260586:web:e31fe44ddc01bdccec0013",
-    measurementId: "G-W3930WL653"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY ,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+    storageBucket: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    appId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    measurementId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
